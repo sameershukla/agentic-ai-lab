@@ -43,7 +43,7 @@ acts by calling a tool, observes the result, then reasons again.
 ├── tools.py        ← Tool definitions (@tool decorated functions)
 ├── agent.py        ← Graph construction: nodes, edges, conditional routing
 ├── run.py          ← Entry point with step-by-step verbose output
-└── requirements.txt
+└── requirements.txt 
 ```
 
 ---
