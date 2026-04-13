@@ -2,7 +2,7 @@
 
 Companion code repository for the book  
 **"From Tokens to Agents: Understanding, Building, and Scaling Modern AI Systems"**  
-by Sameer Shukla — BPB Publications
+by Sameer Shukla
 
 Every folder maps directly to a part of the book. Clone once, follow chapter by chapter.
 
@@ -22,14 +22,14 @@ Every folder maps directly to a part of the book. Clone once, follow chapter by 
 agentic-ai-lab/
 │
 ├── llm-api-interaction/     # Part 1 — Talking to LLMs
-├── llm-tools/               # Part 1 — Function calling & tool use
+├── llm_tools/               # Part 1 — Function calling & tool use
 ├── memory/                  # Part 1 — Conversation & agent memory
-├── prompt-template/         # Part 1 — Prompt engineering patterns
+├── prompt_template/         # Part 1 — Prompt engineering patterns
 │
 ├── rag/                     # Part 2 — RAG fundamentals
 ├── advanced-rag/            # Part 3 — Hybrid search, reranking, evaluation
 │
-├── agentic-ai/              # Part 4 & 5 — Agents, ReAct, multi-agent
+├── agentic_ai/              # Part 4 & 5 — Agents, ReAct, multi-agent
 │
 └── end-to-end/              # Part 6 — Production-grade full system
 ```
@@ -43,17 +43,17 @@ Start here and follow in order — each module builds directly on the previous o
 ```
 llm-api-interaction   →   Understand how to talk to LLMs cleanly
         ↓
-llm-tools             →   Give LLMs the ability to call functions and use tools
+llm_tools             →   Give LLMs the ability to call functions and use tools
         ↓
 memory                →   Make LLMs remember across turns and sessions
         ↓
-prompt-template       →   Engineer prompts that produce reliable outputs
+prompt_template       →   Engineer prompts that produce reliable outputs
         ↓
 rag                   →   Ground LLMs in your own private, current data
         ↓
 advanced-rag          →   Make retrieval smarter with hybrid search and reranking
         ↓
-agentic-ai            →   Build agents that reason, plan, and act autonomously
+agentic_ai            →   Build agents that reason, plan, and act autonomously
         ↓
 end-to-end            →   Combine everything into a production-ready system
 ```
@@ -100,7 +100,7 @@ Your API key is never written into any source file. It is always read from the e
 Direct LLM API calls — completions, streaming, structured outputs, and multi-turn conversations.  
 *Book: Part 1*
 
-### `llm-tools`
+### `llm_tools`
 Function calling, tool definitions, and how agents use external tools to take action.  
 *Book: Part 1*
 
@@ -108,7 +108,7 @@ Function calling, tool definitions, and how agents use external tools to take ac
 Buffer memory, summary memory, and vector memory — how agents remember across turns.  
 *Book: Part 1*
 
-### `prompt-template`
+### `prompt_template`
 Prompt templates, few-shot examples, chain-of-thought, and output parsers.  
 *Book: Part 1*
 
@@ -120,7 +120,7 @@ Naive RAG from scratch — chunking strategies, FAISS indexing, retrieval, and p
 Hybrid search (BM25 + dense), cross-encoder reranking, query transformation, hallucination detection, and RAG evaluation with RAGAS.  
 *Book: Part 3*
 
-### `agentic-ai`
+### `agentic_ai`
 ReAct agents, tool-use agents, NL-to-SQL agent with self-correction, multi-agent collaboration, and agentic RAG.  
 *Book: Part 4 & 5*
 
