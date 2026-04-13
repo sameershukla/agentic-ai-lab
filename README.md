@@ -1,51 +1,33 @@
-# 🚀 Agentic AI Lab
+# ── LLM Clients ───────────────────────────────────────────
+anthropic>=0.25.0
+openai>=1.30.0
 
-A hands-on repository to learn, build, and showcase **AI Agents using LangGraph**, along with **RAG (Retrieval-Augmented Generation)** and advanced agentic patterns.
+# ── LangChain & LangGraph ─────────────────────────────────
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+langchain-anthropic>=0.1.0
+langgraph>=0.1.0
 
-This repo is designed as a **progressive learning + production-style reference**, starting from simple agents and moving towards **multi-agent systems and real-world AI architectures**.
+# ── Embeddings & Vector Search ────────────────────────────
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
 
----
+# ── Hybrid Search ─────────────────────────────────────────
+rank-bm25>=0.2.2
 
-## 🎯 Goal of this Repository
+# ── RAG Evaluation ────────────────────────────────────────
+ragas>=0.1.0
 
-- Master **AI Agents using LangGraph**
-- Build real-world **single-agent and multi-agent systems**
-- Implement **RAG pipelines** (basic → advanced)
-- Understand **agent patterns, decision-making, and state management**
-- Create a **public portfolio of production-ready AI examples**
+# ── Reranking ─────────────────────────────────────────────
+cohere>=5.0.0
 
----
+# ── Utilities ─────────────────────────────────────────────
+python-dotenv>=1.0.0
+tiktoken>=0.7.0
+pydantic>=2.0.0
+tenacity>=8.2.0
+rich>=13.0.0
 
-## 🧠 What You’ll Learn
-
-- How agents **decide, act, and use tools**
-- How to design **stateful workflows using LangGraph**
-- How to build **RAG systems with grounding**
-- How to structure **multi-agent collaboration**
-- How to handle:
-  - retries
-  - failures
-  - hallucinations
-  - human-in-the-loop workflows
-
----
-
-## 📂 Repository Structure
-
-```text
-agentic-ai-lab/
-│
-├── shared/                # Reusable utilities (tools, prompts, schemas)
-│
-├── single_agents/         # Foundational agent examples
-├── multi_agents/          # Multi-agent collaboration patterns
-├── advanced_agents/       # Production-grade agent patterns
-├── rag/                   # RAG implementations (basic → advanced)
-│
-├── data/                  # Sample data (logs, docs, code, notes)
-├── docs/                  # Concepts, notes, and learning material
-├── tests/                 # Test cases
-│
-├── requirements.txt
-├── .env.example
-└── README.md
+# ── Data & Testing ────────────────────────────────────────
+pytest>=8.0.0
