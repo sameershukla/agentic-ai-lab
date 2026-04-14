@@ -56,7 +56,7 @@ def book_flight(origin: str, destination: str, date: str) -> str:
 def check_weather(city: str) -> str:
     """Check current weather for a city."""
     # Stub — replace with a real weather API call.
-    return f"🌤  {city}: 22°C, partly cloudy"
+    return f" {city}: 22°C, partly cloudy"
 
 
 tools = [book_flight, check_weather]
