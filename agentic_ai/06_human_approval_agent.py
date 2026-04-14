@@ -49,7 +49,7 @@ class AgentState(TypedDict):
 def book_flight(origin: str, destination: str, date: str) -> str:
     """Book a flight ticket between two cities on a given date."""
     # In production this calls an airline API.
-    return f"✅ Flight booked: {origin} → {destination} on {date}. Ref: FL-{hash(destination) % 9999:04d}"
+    return f" Flight booked: {origin} → {destination} on {date}. Ref: FL-{hash(destination) % 9999:04d}"
 
 
 @tool
@@ -64,7 +64,7 @@ tools_by_name = {t.name: t for t in tools}
 
 # ── 3. LLM ───────────────────────────────────────────────────────────────────
 
-llm = ChatAnthropic(model="claude-3-5-haiku-20241022").bind_tools(tools)
+llm = ChatAnthropic(model="claude-sonnet-4-20250514").bind_tools(tools)
 
 
 # ── 4. Nodes ─────────────────────────────────────────────────────────────────
