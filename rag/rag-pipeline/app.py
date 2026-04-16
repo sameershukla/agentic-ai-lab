@@ -8,13 +8,13 @@ import anthropic
 
 from Retriever import Retriever
 
-# ── Setup ─────────────────────────────────────────────────────────────────────
+# Setup 
 
 retriever = Retriever()
 client = anthropic.Anthropic()
 
 
-# ── Query Pipeline ────────────────────────────────────────────────────────────
+# Query Pipeline 
 
 def answer_question(question: str) -> str:
     """
@@ -63,7 +63,7 @@ If the answer is not in the policies, say you don't have that information.
     return response.content[0].text
 
 
-# ── Run ───────────────────────────────────────────────────────────────────────
+# Run 
 
 if __name__ == "__main__":
     test_questions = [
