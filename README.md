@@ -21,10 +21,10 @@ Every folder maps directly to a part of the book. Clone once, follow chapter by 
 ```
 agentic-ai-lab/
 │
-├── llm-api-interaction/          # Part 1 — Talking to LLMs
-├── llm_tools/                    # Part 1 — Function calling & tool use
-├── memory/                       # Part 1 — Conversation & agent memory
-├── prompt_template/              # Part 1 — Prompt engineering patterns
+├── llm-api-interaction/          # Part 4 — Talking to LLMs
+├── llm_tools/                    # Part 4 — Function calling & tool use
+├── memory/                       # Part 4 — Conversation & agent memory
+├── prompt_template/              # Part 4 — Prompt engineering patterns
 │
 ├── rag/                          # Part 2 — RAG fundamentals
 │
@@ -35,7 +35,7 @@ agentic-ai-lab/
 │   ├── rag_evaluation/           #   RAGAS-based evaluation pipelines
 │   └── reranking/                #   Cross-encoder reranking strategies
 │
-├── agentic_ai/                   # Part 4 & 5 — Agents & multi-agent systems
+├── agentic_ai/                   # Part 5 — Agents & multi-agent systems
 │   ├── 01_minimal_langgraph_chatbot.py
 │   ├── 02_two_node_workflow.py
 │   ├── 03_conditional_routing.py
@@ -52,8 +52,6 @@ agentic-ai-lab/
 ---
 
 ## Learning Path
-
-Start here and follow in order — each module builds directly on the previous one.
 
 ```
 llm-api-interaction   →   Understand how to talk to LLMs cleanly
@@ -113,19 +111,19 @@ Your API key is never written into any source file. It is always read from the e
 
 ### `llm-api-interaction`
 Direct LLM API calls — completions, streaming, structured outputs, and multi-turn conversations.  
-*Book: Part 1*
+*Book: Part 4*
 
 ### `llm_tools`
 Function calling, tool definitions, and how agents use external tools to take action.  
-*Book: Part 1*
+*Book: Part 4*
 
 ### `memory`
 Buffer memory, summary memory, and vector memory — how agents remember across turns.  
-*Book: Part 1*
+*Book: Part 4*
 
 ### `prompt_template`
 Prompt templates, few-shot examples, chain-of-thought, and output parsers.  
-*Book: Part 1*
+*Book: Part 4*
 
 ### `rag`
 Naive RAG from scratch — chunking strategies, FAISS indexing, retrieval, and prompt augmentation.  
