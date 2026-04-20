@@ -21,17 +21,32 @@ Every folder maps directly to a part of the book. Clone once, follow chapter by 
 ```
 agentic-ai-lab/
 │
-├── llm-api-interaction/     # Part 1 — Talking to LLMs
-├── llm_tools/               # Part 1 — Function calling & tool use
-├── memory/                  # Part 1 — Conversation & agent memory
-├── prompt_template/         # Part 1 — Prompt engineering patterns
+├── llm-api-interaction/          # Part 1 — Talking to LLMs
+├── llm_tools/                    # Part 1 — Function calling & tool use
+├── memory/                       # Part 1 — Conversation & agent memory
+├── prompt_template/              # Part 1 — Prompt engineering patterns
 │
-├── rag/                     # Part 2 — RAG fundamentals
-├── advanced-rag/            # Part 3 — Hybrid search, reranking, evaluation
+├── rag/                          # Part 2 — RAG fundamentals
 │
-├── agentic_ai/              # Part 4 & 5 — Agents, ReAct, multi-agent
+├── advance-rag/                  # Part 3 — Advanced retrieval patterns
+│   ├── agentic_rag/              #   Agentic RAG with retrieval agents
+│   ├── hybrid_search/            #   BM25 + dense vector hybrid retrieval
+│   ├── query_transformation/     #   Query rewriting and expansion
+│   ├── rag_evaluation/           #   RAGAS-based evaluation pipelines
+│   └── reranking/                #   Cross-encoder reranking strategies
 │
-└── end-to-end/              # Part 6 — Production-grade full system
+├── agentic_ai/                   # Part 4 & 5 — Agents & multi-agent systems
+│   ├── 01_minimal_langgraph_chatbot.py
+│   ├── 02_two_node_workflow.py
+│   ├── 03_conditional_routing.py
+│   ├── 04_tool_calling_react_agent.py
+│   ├── 05_memory_with_message_history.py
+│   ├── 06_human_approval_agent.py
+│   ├── 07_supervisor_multi_agent.py
+│   ├── 08_multi_tool_agent.py
+│   └── 09_reflection_agent.py
+│
+└── end-to-end/                   # Part 6 — Production-grade full system
 ```
 
 ---
@@ -51,7 +66,7 @@ prompt_template       →   Engineer prompts that produce reliable outputs
         ↓
 rag                   →   Ground LLMs in your own private, current data
         ↓
-advanced-rag          →   Make retrieval smarter with hybrid search and reranking
+advance-rag           →   Make retrieval smarter with hybrid search and reranking
         ↓
 agentic_ai            →   Build agents that reason, plan, and act autonomously
         ↓
@@ -116,12 +131,34 @@ Prompt templates, few-shot examples, chain-of-thought, and output parsers.
 Naive RAG from scratch — chunking strategies, FAISS indexing, retrieval, and prompt augmentation.  
 *Book: Part 2*
 
-### `advanced-rag`
-Hybrid search (BM25 + dense), cross-encoder reranking, query transformation, hallucination detection, and RAG evaluation with RAGAS.  
+### `advance-rag`
+Advanced retrieval engineering across five focused sub-modules:
+
+| Sub-module | What it covers |
+|---|---|
+| `agentic_rag` | Retrieval agents that decide when and how to retrieve |
+| `hybrid_search` | BM25 + dense vector retrieval combined for higher recall |
+| `query_transformation` | Query rewriting, decomposition, and HyDE |
+| `rag_evaluation` | End-to-end RAG evaluation with RAGAS (faithfulness, relevance, recall) |
+| `reranking` | Cross-encoder reranking to push the most relevant chunks to the top |
+
 *Book: Part 3*
 
 ### `agentic_ai`
-ReAct agents, tool-use agents, NL-to-SQL agent with self-correction, multi-agent collaboration, and agentic RAG.  
+A progressive, numbered sequence from a minimal LangGraph chatbot to a full reflection agent. Each file is self-contained and runnable independently.
+
+| File | What it teaches |
+|---|---|
+| `01_minimal_langgraph_chatbot.py` | Minimal LangGraph state machine with a single LLM node |
+| `02_two_node_workflow.py` | Two-node graph with explicit state transitions |
+| `03_conditional_routing.py` | Conditional edges — routing decisions based on agent output |
+| `04_tool_calling_react_agent.py` | ReAct agent with tool use and observe/act cycles |
+| `05_memory_with_message_history.py` | Persistent memory across turns using message history |
+| `06_human_approval_agent.py` | Human-in-the-loop: interrupt, review, and resume workflows |
+| `07_supervisor_multi_agent.py` | Supervisor pattern — orchestrating multiple specialized subagents |
+| `08_multi_tool_agent.py` | Agent with multiple tools and dynamic tool selection |
+| `09_reflection_agent.py` | Self-critique and reflection loops for improved output quality |
+
 *Book: Part 4 & 5*
 
 ### `end-to-end`
@@ -147,9 +184,9 @@ A production-grade intelligent assistant combining LLM API, RAG, memory, tools, 
 
 ## About the Author
 
-**Sameer Shukla** — Director of Data & AI Architecture  
+**Sameer Shukla** — Director of Data & AI Architecture
 
-[LinkedIn]([https://linkedin.com/in/sameershukla](https://www.linkedin.com/in/sameershukla30/)) · [GitHub](https://github.com/sameershukla) · [Book]([https://bpbonline.com](https://www.freecodecamp.org/news/how-to-optimize-pyspark-jobs-handbook/))
+[LinkedIn](https://www.linkedin.com/in/sameershukla30/) · [GitHub](https://github.com/sameershukla) · [Book](https://www.freecodecamp.org/news/how-to-optimize-pyspark-jobs-handbook/)
 
 ---
 
